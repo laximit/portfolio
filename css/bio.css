@@ -1,0 +1,14 @@
+.bio-items {
+	display: flex;
+	flex-direction: column;
+}
+
+.bio-item {
+	display: flex;
+}
+
+.bio-year {
+	font-weight: bold;
+	width: 35px;
+	margin-right: 5px;
+}
