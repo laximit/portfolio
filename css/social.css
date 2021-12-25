@@ -1,5 +1,6 @@
 .social-links {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	margin-top: 5px;
 }

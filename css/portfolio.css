@@ -3,11 +3,13 @@
 	flex-wrap: wrap;
 	width: 100%;
 	justify-content: center;
+	align-items: center;
 }
 
 .portfolio-item {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	margin: 5px;
 }
@@ -26,4 +28,10 @@
 
 .portfolio-item_title {
 	font-weight: bold;
+}
+
+@media screen and (max-width: 650px) {
+	.portfolio-item_img {
+		width: 100%;
+	}
 }

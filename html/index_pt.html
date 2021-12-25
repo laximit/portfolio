@@ -21,19 +21,33 @@
 <body>
 	<header>
 		<nav class="header-left">
-			<span class="portfolio-button">Portfolio</span>
-			<div class="language">
-				<a class="language-item language-active">en</a>
-				<a class="language-item">pt</a>
+			<div class="language left">
+				<a href="index_en.html" class="language-item">en</a>
+				<a class="language-item language-active">pt</a>
 			</div>
 		</nav>
 		<nav class="header-right">
-			<a href="#" class="fa fa-code-branch source-code"></a>
-			<i class="fas fa-sun theme-icon"></i>
+			<i class="fas fa-bars dropdown-button" id="dropdown-button"></i>
+			<a href="https://github.com/laximit/portfolio" class="fa fa-code-branch source-code right"></a>
+			<i class="fas fa-sun theme-button right"></i>
 		</nav>
 	</header>
 	<div class="header-title">
 		<span>&ltMurilo Lobos/&gt</span>
+	</div>
+	<div class="dropdown-menu" id="dropdown-menu">
+		<div class="language mobile">
+			<a href="index_en.html" class="language-item mobile">English</a>
+			<a class="language-item mobile language-active">Portuguese</a>
+		</div>
+		<a href="https://github.com/laximit/portfolio" class="source-code mobile">
+			<i class="fa fa-code-branch source-code_icon"></i>
+			<span class="source-code_text">Source Code</span>
+		</a>
+		<div class="theme-button mobile">
+			<i class="fa fa-sun theme-button_icon"></i>
+			<span class="theme-button_text">Theme</span>
+		</div>
 	</div>
 
 	<main>
@@ -41,15 +55,15 @@
 			<img class="profile-img" src="../assets/profile.jpeg" alt="Profile">
 			<div class="profile-text">
 				<span class="profile-title">Murilo Lobos</span>
-				<span class="profile-subtitle">Student (Web Development)</span>
+				<span class="profile-subtitle">Estudante (Desenvolvimento Web)</span>
 			</div>
 		</content>
 		<content class="content-section">
-			<span class="content-title">ABOUT</span>
+			<span class="content-title">SOBRE</span>
 			<div class="separator"></div>
 			<span class="about-text">
-				Murilo work with Teleinformatics for about a year, learned programming by himself for about 3-4 years and at the moment is studying at Vila Velha University (UVV) to become a future Full-Stack Developer.
-Murilo can deal with people easily, he’s very patient and have a strong learning wish.
+				Murilo atualmente trabalha com Teleinformática, auto-didata estudando programação por cerca de 3-4 anos e no momento estuda na Universidade de Vila Velha (UVV) para se tornar um futuro desenvolvedor Full-Stack.
+Murilo tem facilidade em lidar com pessoas, é paciente em situações de grande estresse e tem um grande desejo em aprender.
 			</span>
 		</content>
 		<content class="content-section">
@@ -59,38 +73,39 @@ Murilo can deal with people easily, he’s very patient and have a strong learni
 				<div class="bio-item">
 					<span class="bio-year">2001</span>
 					<span class="bio-event">
-						Born in Espirito Santo, Brazil.
+						Nasceu em Espirito Santo, Brasil.
 					</span>
 				</div>
 				<div class="bio-item">
 					<span class="bio-year">2017</span>
 					<span class="bio-event">
-						Graduated from high school.
-						Started learning some programming languages.
+						Se formou no ensino médio.
+						<br>
+						Começou a aprender suas primeiras linguagens de programação.
 					</span>
 				</div>
 				<div class="bio-item">
 					<span class="bio-year">2019</span>
 					<span class="bio-event">
-						Start working at Lucas Solutions as C# Junior Programmer
+						Começou a trabalhar na empresa Lucas Solutions como um programador junior em C#.
 					</span>
 				</div>
 				<div class="bio-item">
 					<span class="bio-year">2020</span>
 					<span class="bio-event">
-						Start workig at VisionTI as TI Technician
+						Começou a trabalhar na empresa VisionTI como Técnico de Teleinformática.
 					</span>
 				</div>
 				<div class="bio-item">
 					<span class="bio-year">2021</span>
 					<span class="bio-event">
-						Started attending to Vila Velha University (UVV) on System Analysis and Development
+						Iniciou o curso de Análise e Desenvolvimento de Sistemas na Universidade de Vila Velha (UVV).
 					</span>
 				</div>
 			</div>
 		</content>
 		<content class="content-section">
-			<span class="content-title">KNOWLEDGE</span>
+			<span class="content-title">CONHECIMENTO</span>
 			<div class="separator"></div>
 			<div class="known-languages">
 				<div class="knowledge-item">
@@ -128,7 +143,7 @@ Murilo can deal with people easily, he’s very patient and have a strong learni
 			</div>
 		</content>
 		<content class="content-section">
-			<span class="content-title">SOCIAL MEDIA</span>
+			<span class="content-title">REDES SOCIAIS</span>
 			<div class="separator"></div>
 			<div class="social-links">
 				<a href="https://github.com/laximit" class="social-link">
@@ -150,7 +165,7 @@ Murilo can deal with people easily, he’s very patient and have a strong learni
 			</div>
 		</content>
 		<content class="content-section">
-			<span class="content-title">PORTFOLIO</span>
+			<span class="content-title">PORTIFÓLIO</span>
 			<div class="separator"></div>
 			<div class="portfolio-items">
 				<div class="portfolio-item">
@@ -162,5 +177,7 @@ Murilo can deal with people easily, he’s very patient and have a strong learni
 			</div>
 		</content>
 	</main>
+
+	<script src="../js/app.js"></script>
 </body>
 </html>
