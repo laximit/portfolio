@@ -1,0 +1,4 @@
+.about-text {
+	color: var(--fg);
+	transition: var(--transition);
+}

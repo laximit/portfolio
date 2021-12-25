@@ -1,63 +1,57 @@
 .profile {
 	display: flex;
 	transition: .2s ease;
+	color: var(--fg);
+	transition: var(--transition);
 }
 
 .profile-img {
 	margin: 1rem;
 	width: 10rem;
 	border-radius: 1rem;
-	transition: .2s ease;
 }
 
 .profile-text {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	transition: .2s ease;
 }
 
 .profile-title{
 	font-size: 4rem;
 	font-weight: bold;
-	transition: .2s ease;
 }
 .profile-subtitle{
 	font-size: 1.5rem;
-	transition: .2s ease;
 }
 
 @media screen and (max-width: 650px) {
 .profile {
 	flex-direction: column;
 	align-items: center;
-	transition: .2s ease;
+	transition: var(--transition);
 }
 
 .profile-img {
 	width: 20rem;
-	transition: .2s ease;
 }
 
 .profile-text {
 	align-items: center;
-	transition: .2s ease;
 }
 }
 
 @media screen and (max-width: 440px) {
 .profile-img {
 	width: 15rem;
-	transition: .2s ease;
+	transition: var(--transition);
 }
 
 .profile-title {
-	transition: .2s ease;
 	font-size: 3rem;
 }
 
 .profile-subtitle {
 	font-size: 1rem;
-	transition: .2s ease;
 }
 }

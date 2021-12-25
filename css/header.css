@@ -25,7 +25,6 @@ header {
 	margin: 5px;
 	border-radius: 5px;
 	cursor: pointer;
-	transition: .2s ease;
 }
 
 .theme-icon, .source-code {
@@ -34,15 +33,16 @@ header {
 }
 
 .theme-button:hover, .source-code:hover {
-	background-color: rgba(0, 0, 0, .1);
-	transition: .2s ease;
+	background-color: var(--accent);
 }
 
 .language {
 	display: flex;
 	padding: .3rem .25rem;
 	border-radius: 5px;
-	background-color: rgba(0, 0, 0, .1);
+	background-color: var(--accent);
+	color: var(--fg);
+	transition: var(--transition);
 }
 
 .language-item {
@@ -52,7 +52,7 @@ header {
 }
 
 .language-active {
-	background-color: rgba(255,255,255,.5);
+	background-color: var(--accent2);
 	font-weight: 500;
 }
 
@@ -69,8 +69,9 @@ header {
 }
 
 .source-code, .language-item {
-	color: black;
+	color: var(--fg);
 	text-decoration-line: none;
+	transition: var(--transition);
 }
 
 .dropdown-menu {
@@ -83,7 +84,6 @@ header {
 	padding: .5rem;
 	margin: .2rem;
 	border-radius: 5px;
-	transition: .2s ease;
 }
 
 .language.mobile {
@@ -114,7 +114,6 @@ header {
 
 .dropdown-menu.active {
 	right: 0;
-	transition: .2s ease;
 }
 
 @media screen and (max-width: 650px) {

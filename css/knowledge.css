@@ -2,7 +2,9 @@
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 5px;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+	color: var(--fg);
+	transition: var(--transition);
 }
 
 .knowledge-item {
