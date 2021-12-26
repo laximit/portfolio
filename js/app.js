@@ -12,13 +12,16 @@ if (theme) {
 dropdownButton.onclick = () => {
 	dropdownMenu.classList.toggle('active');
 }
+dropdownMenu.onclick = () => {
+	dropdownMenu.classList.toggle('active');
+}
 
 function changeTheme() {
-	if (body.classList.contains('light')) {
-		body.classList.replace('light', 'dark');
+	if (body.classList.contains('dark')) {
+		body.classList.remove('dark');
+		localStorage.setItem('theme', '');
+	} else {
+		body.classList.add('dark');
 		localStorage.setItem('theme', 'dark');
-	} else if (body.classList.contains('dark')) {
-		body.classList.replace('dark', 'light');
-		localStorage.setItem('theme', 'light');
 	}
 }

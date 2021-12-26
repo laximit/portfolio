@@ -19,6 +19,8 @@
 	<link rel="stylesheet" href="../css/portfolio.css">
 	<link rel="stylesheet" href="../css/colors.css">
 	<link rel="stylesheet" href="../css/about.css">
+
+	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
 	<header>
@@ -47,12 +49,14 @@
 			<span class="source-code_text">Source Code</span>
 		</a>
 		<div class="theme-button mobile" onclick="changeTheme()">
-			<i class="fa fa-sun theme-button_icon"></i>
+			<i class="fa fa-sun theme-button_icon" ></i>
 			<span class="theme-button_text">Theme</span>
 		</div>
 	</div>
 
 	<main>
+		<model-viewer src="../assets/3d/kitty.gltf" camera-controls shadow-intensity="1" disable-zoom camera-orbit="41.96deg 67.23deg auto" auto-rotate></model-viewer>
+		<div class="separator"></div>
 		<content class="content-section profile">
 			<img class="profile-img" src="../assets/profile.jpeg" alt="Profile">
 			<div class="profile-text">
