@@ -85,6 +85,7 @@ header {
 	margin: .2rem;
 	border-radius: 5px;
 	transition: var(--transition);
+	z-index: 1;
 }
 
 .language.mobile {
